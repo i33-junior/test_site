@@ -6,6 +6,7 @@ import ServicesEditor from '../components/admin/ServicesEditor';
 import PricingEditor from '../components/admin/PricingEditor';
 import GalleryEditor from '../components/admin/GalleryEditor';
 import TestimonialsEditor from '../components/admin/TestimonialsEditor';
+import AccountSettings from '../components/admin/AccountSettings';
 
 const sectionTitleKeys = {
   hero: 'editor_hero',
@@ -26,6 +27,7 @@ export default function AdminDashboard() {
       case 'pricing': return <PricingEditor />;
       case 'gallery': return <GalleryEditor />;
       case 'testimonials': return <TestimonialsEditor />;
+      case 'account': return <AccountSettings />;
       default: return <SectionEditor section={active} title={t(sectionTitleKeys[active] || active)} />;
     }
   };

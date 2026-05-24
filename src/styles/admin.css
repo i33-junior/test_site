@@ -61,6 +61,8 @@
 .admin-btn-primary:hover{box-shadow:0 10px 30px rgba(212,166,74,.4);transform:translateY(-1px);}
 .admin-btn-primary:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none;}
 .admin-btn-primary.saved{background:linear-gradient(135deg,#27d3c5,#0a8079);}
+.admin-forgot-link{display:block;text-align:center;margin-top:16px;color:var(--muted,#8a7a5e);font-size:13px;transition:color .3s;}
+.admin-forgot-link:hover{color:#d4a64a;}
 .admin-btn-secondary{
   padding:12px 24px;background:transparent;
   border:1px solid rgba(212,166,74,.3);color:#d4a64a;

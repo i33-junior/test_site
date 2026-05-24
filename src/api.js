@@ -22,6 +22,18 @@ export const api = {
   // Auth
   login: (username, password) =>
     request(`${API}/auth/login`, { method: 'POST', headers: getHeaders(), body: JSON.stringify({ username, password }) }),
+  changePassword: (oldPassword, newPassword) =>
+    request(`${API}/auth/change-password`, { method: 'POST', headers: getHeaders(true), body: JSON.stringify({ oldPassword, newPassword }) }),
+  getProfile: () =>
+    request(`${API}/auth/profile`, { headers: getHeaders(true) }),
+  updateProfile: (data) =>
+    request(`${API}/auth/profile`, { method: 'PUT', headers: getHeaders(true), body: JSON.stringify(data) }),
+  forgotPassword: (username) =>
+    request(`${API}/auth/forgot-password`, { method: 'POST', headers: getHeaders(), body: JSON.stringify({ username }) }),
+  resetPassword: (token, newPassword) =>
+    request(`${API}/auth/reset-password`, { method: 'POST', headers: getHeaders(), body: JSON.stringify({ token, newPassword }) }),
+  submitContact: (data) =>
+    request(`${API}/contact`, { method: 'POST', headers: getHeaders(), body: JSON.stringify(data) }),
 
   // Content
   getAllContent: () => request(`${API}/content`),

@@ -12,6 +12,7 @@ const menuItems = [
   { id: 'contact', tKey: 'sidebar_contact', icon: 'ti-phone' },
   { id: 'footer', tKey: 'sidebar_footer', icon: 'ti-layout-bottombar' },
   { id: 'meta', tKey: 'sidebar_meta', icon: 'ti-settings' },
+  { id: 'account', tKey: 'sidebar_account', icon: 'ti-user-cog' },
 ];
 
 const langFlags = { pl: 'PL', ru: 'RU', ua: 'UA' };

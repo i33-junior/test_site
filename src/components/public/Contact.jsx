@@ -1,17 +1,28 @@
 import { useState } from 'react';
+import { api } from '../../api';
 
 export default function Contact({ data }) {
   const [status, setStatus] = useState('idle');
 
   if (!data) return null;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
-    setTimeout(() => {
+    try {
+      const fd = new FormData(e.target);
+      await api.submitContact({
+        name: fd.get('name'),
+        phone: fd.get('phone'),
+        service: fd.get('service'),
+        message: fd.get('msg') || ''
+      });
       setStatus('sent');
       setTimeout(() => { e.target.reset(); setStatus('idle'); }, 3000);
-    }, 1200);
+    } catch {
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 3000);
+    }
   };
 
   return (
@@ -77,6 +88,7 @@ export default function Contact({ data }) {
             {status === 'idle' && <>Wyślij rezerwację <i className="ti ti-arrow-right arrow"></i></>}
             {status === 'sending' && 'Wysyłanie...'}
             {status === 'sent' && '✓ Dziękujemy! Oddzwonimy wkrótce.'}
+            {status === 'error' && '✗ Błąd wysyłania. Spróbuj ponownie.'}
           </button>
         </form>
       </div>

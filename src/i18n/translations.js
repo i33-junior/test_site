@@ -18,8 +18,22 @@ export const translations = {
   sidebar_contact: { pl: 'Kontakt', ru: 'Контакты', ua: 'Контакти' },
   sidebar_footer: { pl: 'Stopka', ru: 'Подвал', ua: 'Підвал' },
   sidebar_meta: { pl: 'SEO / Meta', ru: 'SEO / Мета', ua: 'SEO / Мета' },
+  sidebar_account: { pl: 'Konto', ru: 'Аккаунт', ua: 'Акаунт' },
   sidebar_view_site: { pl: 'Zobacz stronę', ru: 'Перейти на сайт', ua: 'Переглянути сайт' },
   sidebar_logout: { pl: 'Wyloguj', ru: 'Выйти', ua: 'Вийти' },
+
+  // ============ ACCOUNT / PASSWORD ============
+  settings_title: { pl: 'Ustawienia konta', ru: 'Настройки аккаунта', ua: 'Налаштування акаунту' },
+  change_password: { pl: 'Zmiana hasła', ru: 'Смена пароля', ua: 'Зміна пароля' },
+  current_password: { pl: 'Obecne hasło', ru: 'Текущий пароль', ua: 'Поточний пароль' },
+  new_password: { pl: 'Nowe hasło', ru: 'Новый пароль', ua: 'Новий пароль' },
+  confirm_password: { pl: 'Potwierdź hasło', ru: 'Подтвердите пароль', ua: 'Підтвердіть пароль' },
+  password_changed: { pl: 'Hasło zmienione', ru: 'Пароль изменён', ua: 'Пароль змінено' },
+  password_mismatch: { pl: 'Hasła nie pasują', ru: 'Пароли не совпадают', ua: 'Паролі не збігаються' },
+  password_too_short: { pl: 'Min. 6 znaków', ru: 'Мин. 6 символов', ua: 'Мін. 6 символів' },
+  recovery_email: { pl: 'E-mail do odzyskiwania', ru: 'E-mail для восстановления', ua: 'E-mail для відновлення' },
+  recovery_email_hint: { pl: 'Na ten adres wyślemy link do zmiany hasła', ru: 'На этот адрес отправим ссылку для смены пароля', ua: 'На цю адресу надішлемо посилання для зміни пароля' },
+  forgot_password: { pl: 'Zapomniałeś hasła?', ru: 'Забыли пароль?', ua: 'Забули пароль?' },
 
   // ============ EDITOR GENERAL ============
   save: { pl: 'Zapisz zmiany', ru: 'Сохранить изменения', ua: 'Зберегти зміни' },

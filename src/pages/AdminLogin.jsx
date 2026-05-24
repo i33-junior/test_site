@@ -57,6 +57,7 @@ export default function AdminLogin() {
           <button type="submit" className="admin-btn-primary" disabled={loading}>
             {loading ? t('login_loading') : t('login_submit')}
           </button>
+          <a href="/admin/forgot-password" className="admin-forgot-link">{t('forgot_password')}</a>
         </form>
       </div>
     </div>

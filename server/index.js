@@ -12,6 +12,7 @@ import pricingRoutes from './routes/pricing.js';
 import galleryRoutes from './routes/gallery.js';
 import testimonialsRoutes from './routes/testimonials.js';
 import uploadRoutes from './routes/upload.js';
+import contactRoutes from './routes/contact.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -45,6 +46,7 @@ app.use('/api/pricing', pricingRoutes);
 app.use('/api/gallery', galleryRoutes);
 app.use('/api/testimonials', testimonialsRoutes);
 app.use('/api/upload', uploadRoutes);
+app.use('/api/contact', contactRoutes);
 
 // SPA fallback (production)
 if (existsSync(distDir)) {

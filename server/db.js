@@ -81,6 +81,10 @@ export function initDB() {
     );
   `);
 
+  try { db.exec('ALTER TABLE users ADD COLUMN email TEXT'); } catch {}
+  try { db.exec('ALTER TABLE users ADD COLUMN reset_token TEXT'); } catch {}
+  try { db.exec('ALTER TABLE users ADD COLUMN reset_token_expires INTEGER'); } catch {}
+
   const userCount = db.prepare('SELECT COUNT(*) as c FROM users').get().c;
   if (userCount === 0) {
     seedData();
