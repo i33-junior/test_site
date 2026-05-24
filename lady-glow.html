@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lady Glow — Laser & Body Atelier · Łódź</title>
+<meta name="description" content="Lady Glow Laser & Body Atelier w Łodzi. Geneo+, Endospheres Therapy, depilacja laserowa, masaż klasyczny. Poczuj się piękną każdego dnia." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader">
+  <div class="pl-wings">
+    <div class="pl-spark"></div>
+    <svg viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="wingGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#f6d57a"/>
+          <stop offset="50%" stop-color="#d4a64a"/>
+          <stop offset="100%" stop-color="#6b4a18"/>
+        </linearGradient>
+      </defs>
+      <g class="wing-l">
+        <path d="M118 78 Q90 70 60 50 Q40 38 18 28 Q40 50 50 70 Q35 60 18 58 Q40 70 55 80 Q40 78 28 82 Q60 88 90 86 Q108 84 118 80 Z" fill="url(#wingGrad)" opacity=".85"/>
+      </g>
+      <g class="wing-r">
+        <path d="M122 78 Q150 70 180 50 Q200 38 222 28 Q200 50 190 70 Q205 60 222 58 Q200 70 185 80 Q200 78 212 82 Q180 88 150 86 Q132 84 122 80 Z" fill="url(#wingGrad)" opacity=".85"/>
+      </g>
+    </svg>
+  </div>
+  <div class="pl-name">Lady Glow</div>
+  <div class="pl-sub">Laser &nbsp;·&nbsp; Body &nbsp;·&nbsp; Atelier</div>
+  <div class="pl-progress"></div>
+</div>
+
+<div class="particles" id="particles"></div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <a href="#" class="nav-logo">
+    Lady Glow
+    <span>Laser &amp; Body Atelier</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Zabiegi</a></li>
+    <li><a href="#master">Specjalista</a></li>
+    <li><a href="#gallery">Galeria</a></li>
+    <li><a href="#pricing">Cennik</a></li>
+    <li><a href="#testimonials">Opinie</a></li>
+    <li><a href="#contact">Kontakt</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Umów wizytę</a>
+  <button class="nav-burger" aria-label="Menu" id="navBurger"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#services">Zabiegi</a></li>
+    <li><a href="#master">Specjalista</a></li>
+    <li><a href="#gallery">Galeria</a></li>
+    <li><a href="#pricing">Cennik</a></li>
+    <li><a href="#testimonials">Opinie</a></li>
+    <li><a href="#contact">Kontakt</a></li>
+  </ul>
+  <a href="#contact" class="mobile-menu-cta">Umów wizytę</a>
+  <div class="mobile-menu-info">
+    Łódź, ul. Wigury 7/02
+    <a href="tel:+48884904792">+48 884 904 792</a>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-curves">
+    <svg viewBox="0 0 1400 900" preserveAspectRatio="none">
+      <path class="c-gold" d="M-100 600 Q 400 300, 800 500 T 1500 350"/>
+      <path class="c-gold" d="M-100 700 Q 500 400, 900 600 T 1500 480" style="opacity:.5"/>
+      <path class="c-teal" d="M1500 250 Q 1000 500, 700 350 T -100 450"/>
+    </svg>
+  </div>
+
+  <div class="hero-figure">
+    <svg viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="figGlow" cx="50%" cy="40%" r="60%">
+          <stop offset="0%" stop-color="#f6d57a" stop-opacity=".35"/>
+          <stop offset="40%" stop-color="#d4a64a" stop-opacity=".15"/>
+          <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#3a2a18"/>
+          <stop offset="50%" stop-color="#5a3f22"/>
+          <stop offset="100%" stop-color="#1a1208"/>
+        </linearGradient>
+        <linearGradient id="hairGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#1a1208"/>
+          <stop offset="100%" stop-color="#0a0807"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="300" cy="320" rx="280" ry="380" fill="url(#figGlow)"/>
+      <g opacity=".92">
+        <ellipse cx="305" cy="155" rx="55" ry="45" fill="url(#hairGrad)"/>
+        <ellipse cx="335" cy="135" rx="22" ry="18" fill="url(#hairGrad)"/>
+        <path d="M270 180 Q285 230 280 270 L320 270 Q330 230 340 195 Q345 170 305 165 Q275 165 270 180 Z" fill="url(#bodyGrad)"/>
+        <path d="M200 290 Q250 270 305 280 Q360 270 410 290 Q430 320 440 380 Q450 480 445 580 L430 700 L380 720 Q340 680 320 600 Q310 540 310 480 Q310 540 300 600 Q280 680 240 720 L190 700 L175 580 Q170 480 180 380 Q190 320 200 290 Z" fill="url(#bodyGrad)"/>
+        <path d="M310 290 Q308 380 310 480 Q312 560 308 620" stroke="#1a1208" stroke-width="2" fill="none" opacity=".7"/>
+        <path d="M255 295 Q258 340 270 380" stroke="#0a0807" stroke-width="1.5" fill="none"/>
+        <path d="M355 295 Q352 340 340 380" stroke="#0a0807" stroke-width="1.5" fill="none"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Łódź &middot; Premium Beauty Atelier</div>
+    <h1>
+      <span class="line"><span>Twoje <em class="gold">piękno</em>.</span></span>
+      <span class="line"><span>Twoja <em class="teal">pewność</em>.</span></span>
+      <span class="line"><span>Twój <em class="gold">glow</em>.</span></span>
+    </h1>
+    <p class="hero-tagline">
+      Poczuj się piękną <span>każdego dnia</span> — w sercu Łodzi, w naszym kameralnym atelier urody.
+    </p>
+    <div class="hero-cta-row">
+      <a href="#contact" class="btn btn-primary">
+        Zarezerwuj wizytę
+        <i class="ti ti-arrow-right arrow"></i>
+      </a>
+      <a href="#services" class="btn btn-ghost">
+        Poznaj zabiegi
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-side">
+    <div class="hero-side-item"><i class="ti ti-star-filled" style="margin-right:4px;"></i> 5.0 · 69 opinii</div>
+    <div class="hero-side-line"></div>
+    <div class="hero-side-item">EST. Łódź</div>
+  </div>
+
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- ============ SERVICES (NEW CARDS WITH IMG + DEVICE CIRCLE) ============ -->
+<section class="section services" id="services">
+  <div class="section-eyebrow"><div class="diamond"></div>Nasze zabiegi<div class="diamond"></div></div>
+  <h2 class="section-title reveal">Cztery <em>filary</em> piękna</h2>
+  <p class="section-sub reveal">Indywidualne rytuały pielęgnacyjne — od skóry pełnej blasku po sylwetkę pełną harmonii.</p>
+
+  <div class="services-grid">
+
+    <!-- 1. GENEO+ -->
+    <article class="service-card">
+      <div class="service-img">
+        <div class="service-img-placeholder" data-img="geneo-main">
+          <!-- placeholder: glowing face -->
+          <svg viewBox="0 0 100 100"><circle cx="50" cy="42" r="20"/><path d="M30 75 Q50 60 70 75"/><circle cx="42" cy="40" r="1.5" fill="currentColor"/><circle cx="58" cy="40" r="1.5" fill="currentColor"/><path d="M42 50 Q50 56 58 50"/><path d="M75 25l4-4 M82 30l5 0 M75 36l4 4" stroke-linecap="round"/></svg>
+        </div>
+        <!-- Замініть на: <img src="ваше-фото.jpg" alt="Geneo+ Glow Skóry"/> -->
+      </div>
+        <div class="service-device">
+          <div class="service-device-placeholder" data-img="geneo-device">
+            <!-- placeholder: device wand -->
+            <svg viewBox="0 0 60 60"><circle cx="30" cy="22" r="10"/><path d="M30 32 L30 50"/><path d="M22 18 Q30 22 38 18" stroke-linecap="round"/><circle cx="30" cy="22" r="3" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <!-- Замініть на: <img src="прилад-фото.jpg" alt=""/> -->
+        </div>
+      <div class="service-body">
+        <span class="service-corner">01</span>
+        <div class="service-eyebrow">Geneo+</div>
+        <h3 class="service-name">Glow <em>skóry</em></h3>
+        <p class="service-desc">Trójetapowy zabieg dotleniający i regenerujący skórę od wewnątrz. Promienna, zdrowa i wyraźnie młodsza skóra już po jednej sesji.</p>
+        <div class="service-meta">
+          <div class="service-meta-item">
+            <i class="ti ti-clock-hour-4"></i>
+            od 60 min
+          </div>
+          <div class="service-meta-item">
+            <i class="ti ti-tag"></i>
+            od 150 zł
+          </div>
+        </div>
+        <a href="#pricing" class="service-link">Cennik i pakiety <i class="ti ti-arrow-right"></i></a>
+      </div>
+    </article>
+
+    <!-- 2. ENDOSPHERES -->
+    <article class="service-card">
+      <div class="service-img">
+        <div class="service-img-placeholder" data-img="endo-main">
+          <svg viewBox="0 0 100 100"><ellipse cx="50" cy="20" rx="6" ry="6"/><path d="M40 28 Q36 42 36 60 L36 82 M60 28 Q64 42 64 60 L64 82"/><path d="M50 28 L50 82"/><circle cx="85" cy="40" r="3"/><circle cx="80" cy="50" r="2"/><circle cx="85" cy="60" r="3"/></svg>
+        </div>
+      </div>
+        <div class="service-device">
+          <div class="service-device-placeholder" data-img="endo-device">
+            <svg viewBox="0 0 60 60"><rect x="15" y="20" width="30" height="20" rx="3"/><circle cx="22" cy="30" r="2.5"/><circle cx="30" cy="30" r="2.5"/><circle cx="38" cy="30" r="2.5"/><path d="M30 40 L30 50"/></svg>
+          </div>
+        </div>
+      <div class="service-body">
+        <span class="service-corner">02</span>
+        <div class="service-eyebrow">Endospheres Therapy</div>
+        <h3 class="service-name">Redukcja <em>cellulitu</em></h3>
+        <p class="service-desc">Mikrowibracyjny masaż 55 silikonowymi sferami — modeluje sylwetkę, redukuje obrzęki i pomarańczową skórkę. Widocznie jędrniejsza skóra.</p>
+        <div class="service-meta">
+          <div class="service-meta-item">
+            <i class="ti ti-clock-hour-4"></i>
+            60 min
+          </div>
+          <div class="service-meta-item">
+            <i class="ti ti-tag"></i>
+            od 166 zł
+          </div>
+        </div>
+        <a href="#pricing" class="service-link">Cennik i pakiety <i class="ti ti-arrow-right"></i></a>
+      </div>
+    </article>
+
+    <!-- 3. LASER -->
+    <article class="service-card">
+      <div class="service-img">
+        <div class="service-img-placeholder" data-img="laser-main">
+          <svg viewBox="0 0 100 100"><path d="M38 20 Q36 50 38 75 Q40 85 42 90"/><path d="M62 20 Q64 50 62 75 Q60 85 58 90"/><path d="M80 30 L75 35 M85 42 L78 42 M80 54 L75 49" stroke-linecap="round"/><circle cx="85" cy="42" r="2" fill="currentColor" stroke="none"/></svg>
+        </div>
+      </div>
+        <div class="service-device">
+          <div class="service-device-placeholder" data-img="laser-device">
+            <svg viewBox="0 0 60 60"><rect x="20" y="15" width="20" height="25" rx="3"/><path d="M25 40 L25 50 M35 40 L35 50"/><circle cx="30" cy="25" r="3" fill="currentColor" stroke="none" opacity=".6"/><path d="M30 12 L30 8 M22 14 L19 11 M38 14 L41 11" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+      <div class="service-body">
+        <span class="service-corner">03</span>
+        <div class="service-eyebrow">Depilacja laserowa</div>
+        <h3 class="service-name">Gładka <em>skóra</em></h3>
+        <p class="service-desc">Bezpieczna i trwała depilacja laserem diodowym — dla każdej karnacji i typu włosa. Długotrwała gładkość, komfort i pewność siebie.</p>
+        <div class="service-meta">
+          <div class="service-meta-item">
+            <i class="ti ti-clock-hour-4"></i>
+            od 10 min
+          </div>
+          <div class="service-meta-item">
+            <i class="ti ti-tag"></i>
+            od 50 zł
+          </div>
+        </div>
+        <a href="#pricing" class="service-link">Cennik i pakiety <i class="ti ti-arrow-right"></i></a>
+      </div>
+    </article>
+
+    <!-- 4. CARBON PEEL -->
+    <article class="service-card">
+      <div class="service-img">
+        <div class="service-img-placeholder" data-img="carbon-main">
+          <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="14" opacity=".5"/><circle cx="44" cy="46" r="1" fill="currentColor"/><circle cx="56" cy="46" r="1" fill="currentColor"/><circle cx="50" cy="52" r="1" fill="currentColor"/><circle cx="46" cy="56" r="1" fill="currentColor"/><circle cx="54" cy="56" r="1" fill="currentColor"/><path d="M78 30l4-4 M82 38l5 0 M78 46l4 4" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+        <div class="service-device">
+          <div class="service-device-placeholder" data-img="carbon-device">
+            <svg viewBox="0 0 60 60"><circle cx="30" cy="22" r="8"/><path d="M30 30 L30 48"/><path d="M22 22 L18 22 M38 22 L42 22" stroke-linecap="round"/><circle cx="30" cy="22" r="2" fill="currentColor" stroke="none"/></svg>
+          </div>
+        </div>
+      <div class="service-body">
+        <span class="service-corner">04</span>
+        <div class="service-eyebrow">Peeling węglowy laserowy</div>
+        <h3 class="service-name">Glow <em>Skin</em></h3>
+        <p class="service-desc">Laserowy peeling węglowy oczyszcza, rozjaśnia i wygładza skórę. Idealne rozwiązanie dla rozszerzonych porów, niedoskonałości i tłustej cery.</p>
+        <div class="service-meta">
+          <div class="service-meta-item">
+            <i class="ti ti-clock-hour-4"></i>
+            60-100 min
+          </div>
+          <div class="service-meta-item">
+            <i class="ti ti-tag"></i>
+            od 150 zł
+          </div>
+        </div>
+        <a href="#pricing" class="service-link">Cennik i pakiety <i class="ti ti-arrow-right"></i></a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ MASTER / SPECIALIST ============ -->
+<section class="section master" id="master">
+  <div class="section-eyebrow"><div class="diamond"></div>Twój specjalista<div class="diamond"></div></div>
+  <h2 class="section-title reveal">Mistrzostwo w <em>każdym detalu</em></h2>
+  <p class="section-sub reveal">Bo prawdziwe piękno powstaje w rękach prawdziwego eksperta.</p>
+
+  <div class="master-grid">
+    <div class="master-photo reveal">
+      <div class="master-badge">Założycielka</div>
+      <div class="master-photo-frame"></div>
+      <div class="master-photo-inner">
+        <!-- Замініть на: <img src="elena-photo.jpg" alt="Elena Ladna"/> -->
+        <div class="master-photo-placeholder">
+          <svg viewBox="0 0 100 100">
+            <circle cx="50" cy="35" r="16"/>
+            <path d="M22 88 Q22 60 50 60 Q78 60 78 88"/>
+          </svg>
+          <span>Foto wkrótce</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="master-text reveal">
+      <div class="section-eyebrow"><div class="diamond"></div>O specjaliście</div>
+      <h2>Elena <em>Ladna</em></h2>
+      <div class="master-role">Certyfikowany kosmetolog &middot; Założycielka Lady Glow</div>
+
+      <p>Elena to dusza i serce Lady Glow. <strong>Ponad 10 lat doświadczenia</strong> w branży beauty, certyfikaty międzynarodowe i niegasnąca pasja do swojej pracy.</p>
+      <p>Wierzy, że każda kobieta zasługuje na indywidualne podejście i najwyższą jakość usług. Łączy wiedzę ekspercką z troskliwością i ciepłą atmosferą podczas każdej wizyty.</p>
+
+      <div class="master-quote">
+        Każda klientka, która wchodzi do mojego atelier, powinna wyjść stąd promienna i pewna siebie. To moja misja.
+      </div>
+
+      <div class="master-skills">
+        <div class="master-skill"><span class="master-skill-dot"></span>Certyfikat Geneo+</div>
+        <div class="master-skill"><span class="master-skill-dot"></span>Endospheres Therapy</div>
+        <div class="master-skill"><span class="master-skill-dot"></span>Depilacja laserowa</div>
+        <div class="master-skill"><span class="master-skill-dot"></span>Peeling laserowy</div>
+        <div class="master-skill"><span class="master-skill-dot"></span>Masaż klasyczny</div>
+        <div class="master-skill"><span class="master-skill-dot"></span>Indywidualne konsultacje</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section gallery" id="gallery">
+  <div class="section-eyebrow"><div class="diamond"></div>Galeria<div class="diamond"></div></div>
+  <h2 class="section-title reveal">Atmosfera <em>naszego</em> atelier</h2>
+  <p class="section-sub reveal">Eleganckie wnętrza, profesjonalny sprzęt, momenty piękna — przekonaj się sama.</p>
+
+  <div class="gallery-wrap reveal">
+    <div class="gallery-track-wrap">
+      <div class="gallery-track" id="galleryTrack">
+        <!-- Замінюй placeholder-и на <img src="..." alt=""/> -->
+        <div class="gallery-slide">
+          <div class="gallery-placeholder"><svg viewBox="0 0 100 100"><rect x="15" y="20" width="70" height="55" rx="2"/><path d="M30 50 L42 38 L55 50 L70 35"/><circle cx="68" cy="32" r="3" fill="currentColor" stroke="none"/></svg><span>Wnętrze 01</span></div>
+          <div class="gallery-caption">Recepcja &middot; Powitanie</div>
+        </div>
+        <div class="gallery-slide">
+          <div class="gallery-placeholder"><svg viewBox="0 0 100 100"><rect x="20" y="30" width="60" height="40" rx="2"/><path d="M25 70 L25 85 M75 70 L75 85"/><path d="M30 50 L40 45 L50 50 L60 45 L70 50"/></svg><span>Gabinet 01</span></div>
+          <div class="gallery-caption">Gabinet zabiegowy</div>
+        </div>
+        <div class="gallery-slide">
+          <div class="gallery-placeholder"><svg viewBox="0 0 100 100"><circle cx="50" cy="40" r="12"/><path d="M30 75 Q50 55 70 75"/><path d="M75 25l4-4 M82 30l5 0" stroke-linecap="round"/></svg><span>Geneo+</span></div>
+          <div class="gallery-caption">Geneo+ &middot; Glow Skóry</div>
+        </div>
+        <div class="gallery-slide">
+          <div class="gallery-placeholder"><svg viewBox="0 0 100 100"><rect x="25" y="25" width="50" height="50" rx="3"/><circle cx="40" cy="45" r="3"/><circle cx="60" cy="45" r="3"/><path d="M35 60 Q50 70 65 60"/></svg><span>Endospheres</span></div>
+          <div class="gallery-caption">Endospheres Therapy</div>
+        </div>
+        <div class="gallery-slide">
+          <div class="gallery-placeholder"><svg viewBox="0 0 100 100"><path d="M40 15 L40 85 M60 15 L60 85"/><circle cx="80" cy="50" r="4"/><path d="M80 50 L70 50" stroke-linecap="round"/></svg><span>Depilacja</span></div>
+          <div class="gallery-caption">Depilacja laserowa</div>
+        </div>
+        <div class="gallery-slide">
+          <div class="gallery-placeholder"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="25"/><circle cx="50" cy="50" r="15" opacity=".5"/><circle cx="46" cy="48" r="1" fill="currentColor"/><circle cx="54" cy="52" r="1" fill="currentColor"/></svg><span>Glow Skin</span></div>
+          <div class="gallery-caption">Peeling węglowy</div>
+        </div>
+        <div class="gallery-slide">
+          <div class="gallery-placeholder"><svg viewBox="0 0 100 100"><path d="M20 60 Q30 50 40 60 Q50 70 60 60 Q70 50 80 60" stroke-linecap="round"/><path d="M20 70 Q30 60 40 70 Q50 80 60 70 Q70 60 80 70" stroke-linecap="round"/><circle cx="50" cy="35" r="6"/></svg><span>Masaż</span></div>
+          <div class="gallery-caption">Masaż klasyczny</div>
+        </div>
+        <div class="gallery-slide">
+          <div class="gallery-placeholder"><svg viewBox="0 0 100 100"><path d="M30 20 L50 50 L70 20 M30 80 L50 50 L70 80"/><circle cx="50" cy="50" r="4"/></svg><span>Detal 01</span></div>
+          <div class="gallery-caption">Detale wnętrza</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-nav">
+      <button class="gallery-btn" id="galleryPrev" aria-label="Poprzednie">
+        <i class="ti ti-chevron-left"></i>
+      </button>
+      <div class="gallery-dots" id="galleryDots"></div>
+      <button class="gallery-btn" id="galleryNext" aria-label="Następne">
+        <i class="ti ti-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ACCORDION ============ -->
+<section class="section pricing" id="pricing">
+  <div class="section-eyebrow"><div class="diamond"></div>Cennik usług<div class="diamond"></div></div>
+  <h2 class="section-title reveal">Pełna oferta <em>zabiegów</em></h2>
+  <p class="section-sub reveal">Przejrzyste ceny i pakiety dostosowane do Twoich potrzeb. Kliknij kategorię, aby zobaczyć szczegóły.</p>
+
+  <div class="pricing-wrap reveal">
+    <div class="price-accordion">
+
+      <!-- DEPILACJA - PIERWSZY ZABIEG -->
+      <div class="price-section">
+        <button class="price-head" data-acc>
+          <div class="price-head-left">
+            <div class="price-icon"><i class="ti ti-wand"></i></div>
+            <div class="price-head-text">
+              <h3><i class="ti ti-sparkles" style="color:var(--gold-1);margin-right:8px;"></i> Gładka Skóra · <em>Pierwsza wizyta</em></h3>
+              <div class="price-head-meta">9 pakietów · do 40% taniej</div>
+            </div>
+          </div>
+          <div class="price-toggle"><i class="ti ti-plus"></i></div>
+        </button>
+        <div class="price-body">
+          <div class="price-inner">
+            <div class="price-list">
+              <div class="price-item">
+                <div class="price-name"><i class="ti ti-sparkles" style="color:var(--gold-2);margin-right:6px;"></i>Pakiet #1 &nbsp;Pachy + Bikini + Nogi <span class="price-badge">-40%</span></div>
+                <div class="price-dots"></div>
+                <div class="price-time"><i class="ti ti-clock-hour-4"></i>2g</div>
+                <div class="price-cost-row"><span class="price-cost-old">650 zł</span><span class="price-cost">390 zł</span></div>
+              </div>
+              <div class="price-item">
+                <div class="price-name"><i class="ti ti-sparkles" style="color:var(--gold-2);margin-right:6px;"></i>Pakiet #2 &nbsp;Pachy + Bikini + Łydki <span class="price-badge">-40%</span></div>
+                <div class="price-dots"></div>
+                <div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 50min</div>
+                <div class="price-cost-row"><span class="price-cost-old">550 zł</span><span class="price-cost">330 zł</span></div>
+              </div>
+              <div class="price-item">
+                <div class="price-name"><i class="ti ti-sparkles" style="color:var(--gold-2);margin-right:6px;"></i>Pakiet #3 &nbsp;Pachy + Bikini głębokie <span class="price-badge">-40%</span></div>
+                <div class="price-dots"></div>
+                <div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 10min</div>
+                <div class="price-cost-row"><span class="price-cost-old">400 zł</span><span class="price-cost">240 zł</span></div>
+              </div>
+              <div class="price-item">
+                <div class="price-name"><i class="ti ti-sparkles" style="color:var(--gold-2);margin-right:6px;"></i>Pakiet #4 &nbsp;Pachy + Całe nogi <span class="price-badge">-40%</span></div>
+                <div class="price-dots"></div>
+                <div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 30min</div>
+                <div class="price-cost-row"><span class="price-cost-old">450 zł</span><span class="price-cost">270 zł</span></div>
+              </div>
+              <div class="price-item">
+                <div class="price-name"><i class="ti ti-sparkles" style="color:var(--gold-2);margin-right:6px;"></i>Pakiet #5 &nbsp;Pachy + Łydki z kolanami <span class="price-badge">-40%</span></div>
+                <div class="price-dots"></div>
+                <div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 10min</div>
+                <div class="price-cost-row"><span class="price-cost-old">400 zł</span><span class="price-cost">240 zł</span></div>
+              </div>
+              <div class="price-item">
+                <div class="price-name"><i class="ti ti-sparkles" style="color:var(--gold-2);margin-right:6px;"></i>Pakiet #6 &nbsp;Bikini + Całe nogi <span class="price-badge">-40%</span></div>
+                <div class="price-dots"></div>
+                <div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 30min</div>
+                <div class="price-cost-row"><span class="price-cost-old">500 zł</span><span class="price-cost">300 zł</span></div>
+              </div>
+              <div class="price-item">
+                <div class="price-name"><i class="ti ti-sparkles" style="color:var(--gold-2);margin-right:6px;"></i>Pakiet #7 &nbsp;Bikini + Łydki z kolanami <span class="price-badge">-40%</span></div>
+                <div class="price-dots"></div>
+                <div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 20min</div>
+                <div class="price-cost-row"><span class="price-cost-old">450 zł</span><span class="price-cost">270 zł</span></div>
+              </div>
+              <div class="price-item">
+                <div class="price-name"><i class="ti ti-sparkles" style="color:var(--gold-2);margin-right:6px;"></i>Pakiet #8 &nbsp;Pachy + Bikini + Całe nogi + Ręce <span class="price-badge">-40%</span></div>
+                <div class="price-dots"></div>
+                <div class="price-time"><i class="ti ti-clock-hour-4"></i>2g 30min</div>
+                <div class="price-cost-row"><span class="price-cost-old">750 zł</span><span class="price-cost">450 zł</span></div>
+              </div>
+              <div class="price-item">
+                <div class="price-name"><i class="ti ti-sparkles" style="color:var(--gold-2);margin-right:6px;"></i>Pakiet #9 &nbsp;Pachy + Bikini + Łydki + Ręce <span class="price-badge">-40%</span></div>
+                <div class="price-dots"></div>
+                <div class="price-time"><i class="ti ti-clock-hour-4"></i>2g 20min</div>
+                <div class="price-cost-row"><span class="price-cost-old">700 zł</span><span class="price-cost">420 zł</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DEPILACJA - PAKIETY -->
+      <div class="price-section">
+        <button class="price-head" data-acc>
+          <div class="price-head-left">
+            <div class="price-icon"><i class="ti ti-gift"></i></div>
+            <div class="price-head-text">
+              <h3><i class="ti ti-sparkles" style="color:var(--gold-1);margin-right:8px;"></i> Depilacja laserowa · <em>Pakiety</em></h3>
+              <div class="price-head-meta">10 pakietów · ceny standardowe</div>
+            </div>
+          </div>
+          <div class="price-toggle"><i class="ti ti-plus"></i></div>
+        </button>
+        <div class="price-body">
+          <div class="price-inner">
+            <div class="price-list">
+              <div class="price-item"><div class="price-name">Pakiet #1 &nbsp;Pachy + Bikini + Całe nogi</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>2g</div><div class="price-cost-row"><span class="price-cost">650 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Pakiet #2 &nbsp;Pachy + Bikini + Łydki z kolanami</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 50min</div><div class="price-cost-row"><span class="price-cost">550 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Pakiet #3 &nbsp;Pachy + Bikini głębokie</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 10min</div><div class="price-cost-row"><span class="price-cost">400 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Pakiet #4 &nbsp;Pachy + Całe nogi</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 20min</div><div class="price-cost-row"><span class="price-cost">450 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Pakiet #5 &nbsp;Pachy + Łydki z kolanami</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 10min</div><div class="price-cost-row"><span class="price-cost">400 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Pakiet #6 &nbsp;Bikini + Całe nogi</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 30min</div><div class="price-cost-row"><span class="price-cost">500 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Pakiet #7 &nbsp;Bikini + Łydki z kolanami</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 20min</div><div class="price-cost-row"><span class="price-cost">450 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Pakiet #8 &nbsp;Twarz<small>Wąsik + Podbródek + Policzki</small></div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>50min</div><div class="price-cost-row"><span class="price-cost">250 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Pakiet #9 &nbsp;Pachy + Bikini + Całe nogi + Ręce</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>2g 30min</div><div class="price-cost-row"><span class="price-cost">750 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Pakiet #10 &nbsp;Pachy + Bikini + Łydki z kolanami + Ręce</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>2g 20min</div><div class="price-cost-row"><span class="price-cost">700 zł</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DEPILACJA - MAŁE PARTIE -->
+      <div class="price-section">
+        <button class="price-head" data-acc>
+          <div class="price-head-left">
+            <div class="price-icon"><i class="ti ti-sparkles"></i></div>
+            <div class="price-head-text">
+              <h3><i class="ti ti-sparkles" style="color:var(--gold-1);margin-right:8px;"></i> Depilacja · <em>Małe partie</em></h3>
+              <div class="price-head-meta">18 usług · pojedyncze obszary</div>
+            </div>
+          </div>
+          <div class="price-toggle"><i class="ti ti-plus"></i></div>
+        </button>
+        <div class="price-body">
+          <div class="price-inner">
+            <div class="price-list">
+              <div class="price-item"><div class="price-name">Pachy</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>30min</div><div class="price-cost-row"><span class="price-cost">170 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Bikini głębokie</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>40min</div><div class="price-cost-row"><span class="price-cost">270 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Bikini płytkie</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>15min</div><div class="price-cost-row"><span class="price-cost">200 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Linia brzucha (biała linia)</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>15min</div><div class="price-cost-row"><span class="price-cost">60 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Całe nogi <span class="price-badge">-65%</span></div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>50min</div><div class="price-cost-row"><span class="price-cost-old">400 zł</span><span class="price-cost">140 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Uda</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>30min</div><div class="price-cost-row"><span class="price-cost">250 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Łydki z kolanami</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>40min</div><div class="price-cost-row"><span class="price-cost">250 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Ręce całkowicie</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>30min</div><div class="price-cost-row"><span class="price-cost">250 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Ręce po łokieć</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>30min</div><div class="price-cost-row"><span class="price-cost">200 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Wąsik</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>10min</div><div class="price-cost-row"><span class="price-cost">70 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Podbródek</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>10min</div><div class="price-cost-row"><span class="price-cost">70 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Policzki</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>30min</div><div class="price-cost-row"><span class="price-cost">100 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Dolna część pleców</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>30min</div><div class="price-cost-row"><span class="price-cost">150 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Brzuch</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>40min</div><div class="price-cost-row"><span class="price-cost">150 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Szpara pośladkowa</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>10min</div><div class="price-cost-row"><span class="price-cost">60 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Pośladki</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>40min</div><div class="price-cost-row"><span class="price-cost">300 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Plecy</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>50min</div><div class="price-cost-row"><span class="price-cost">200 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Otoczki sutkowe / Sutki</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>20min</div><div class="price-cost-row"><span class="price-cost">50 zł</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENDOSPHERES -->
+      <div class="price-section">
+        <button class="price-head" data-acc>
+          <div class="price-head-left">
+            <div class="price-icon"><i class="ti ti-grain"></i></div>
+            <div class="price-head-text">
+              <h3><i class="ti ti-sparkles" style="color:var(--gold-1);margin-right:8px;"></i> Redukcja Cellulitu · <em>Endospheres</em></h3>
+              <div class="price-head-meta">4 zabiegi · do 40% taniej</div>
+            </div>
+          </div>
+          <div class="price-toggle"><i class="ti ti-plus"></i></div>
+        </button>
+        <div class="price-body">
+          <div class="price-inner">
+            <div class="price-list">
+              <div class="price-item"><div class="price-name">VIP Intensive (pakiet) <span class="price-badge">-40%</span></div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g</div><div class="price-cost-row"><span class="price-cost-old">277 zł</span><span class="price-cost">166 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Body Contour (pakiet) <span class="price-badge">-40%</span></div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g</div><div class="price-cost-row"><span class="price-cost-old">299 zł</span><span class="price-cost">179 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Start Lymph (pakiet) <span class="price-badge">-40%</span></div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g</div><div class="price-cost-row"><span class="price-cost-old">317 zł</span><span class="price-cost">190 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Pojedyncza sesja</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g</div><div class="price-cost-row"><span class="price-cost">320 zł</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARBON PEEL -->
+      <div class="price-section">
+        <button class="price-head" data-acc>
+          <div class="price-head-left">
+            <div class="price-icon"><i class="ti ti-spray"></i></div>
+            <div class="price-head-text">
+              <h3><i class="ti ti-sparkles" style="color:var(--gold-1);margin-right:8px;"></i> Laserowy Peeling Węglowy · <em>Glow Skin</em></h3>
+              <div class="price-head-meta">6 zabiegów · oczyszczanie i rozjaśnianie</div>
+            </div>
+          </div>
+          <div class="price-toggle"><i class="ti ti-plus"></i></div>
+        </button>
+        <div class="price-body">
+          <div class="price-inner">
+            <div class="price-list">
+              <div class="price-item"><div class="price-name">Peeling węglowy &nbsp;Twarz<small>tonik / krem / lampa LED</small> <span class="price-badge">-40%</span></div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g</div><div class="price-cost-row"><span class="price-cost-old">250 zł</span><span class="price-cost">150 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Peeling węglowy &nbsp;Twarz + Szyja<small>tonik / krem / lampa LED</small> <span class="price-badge">-40%</span></div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 30min</div><div class="price-cost-row"><span class="price-cost-old">334 zł</span><span class="price-cost">200 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Peeling węglowy &nbsp;Twarz + Szyja + Dekolt<small>tonik / krem / lampa LED</small></div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 40min</div><div class="price-cost-row"><span class="price-cost">250 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Peeling węglowy &nbsp;Plecy</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g</div><div class="price-cost-row"><span class="price-cost">250 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Peeling węglowy &nbsp;Ramiona</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g</div><div class="price-cost-row"><span class="price-cost">250 zł</span></div></div>
+              <div class="price-item"><div class="price-name">Maska algowa / alginatowa<small>uzupełnienie zabiegu</small></div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>30min</div><div class="price-cost-row"><span class="price-cost">50 zł</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STARY CENNIK -->
+      <div class="price-section">
+        <button class="price-head" data-acc>
+          <div class="price-head-left">
+            <div class="price-icon"><i class="ti ti-rosette"></i></div>
+            <div class="price-head-text">
+              <h3><i class="ti ti-flower" style="color:var(--gold-1);margin-right:8px;"></i> Cennik dla stałych klientek <em>(przed 16.10.2025)</em></h3>
+              <div class="price-head-meta">17 usług · ceny bez zmian</div>
+            </div>
+          </div>
+          <div class="price-toggle"><i class="ti ti-plus"></i></div>
+        </button>
+        <div class="price-body">
+          <div class="price-inner">
+            <div class="price-list">
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Pachy + Bikini</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 10min</div><div class="price-cost-row"><span class="price-cost">320 zł</span></div></div>
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Pachy + Nogi</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 20min</div><div class="price-cost-row"><span class="price-cost">400 zł</span></div></div>
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Bikini + Nogi</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 30min</div><div class="price-cost-row"><span class="price-cost">450 zł</span></div></div>
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Pachy + Bikini + Nogi</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>2g</div><div class="price-cost-row"><span class="price-cost">500 zł</span></div></div>
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Pachy + Bikini + Łydki</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 50min</div><div class="price-cost-row"><span class="price-cost">450 zł</span></div></div>
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Bikini + Łydki</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>1g 15min</div><div class="price-cost-row"><span class="price-cost">350 zł</span></div></div>
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Ręce</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>30min</div><div class="price-cost-row"><span class="price-cost">250 zł</span></div></div>
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Ręce po łokieć</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>20min</div><div class="price-cost-row"><span class="price-cost">200 zł</span></div></div>
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Nogi</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>50min</div><div class="price-cost-row"><span class="price-cost">300 zł</span></div></div>
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Łydki</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>40min</div><div class="price-cost-row"><span class="price-cost">250 zł</span></div></div>
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Bikini</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>40min</div><div class="price-cost-row"><span class="price-cost">250 zł</span></div></div>
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Pachy</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>30min</div><div class="price-cost-row"><span class="price-cost">150 zł</span></div></div>
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Pośladki</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>40min</div><div class="price-cost-row"><span class="price-cost">300 zł</span></div></div>
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Twarz</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>50min</div><div class="price-cost-row"><span class="price-cost">150 zł</span></div></div>
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Wąsik</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>10min</div><div class="price-cost-row"><span class="price-cost">50 zł</span></div></div>
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Podbródek</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>10min</div><div class="price-cost-row"><span class="price-cost">50 zł</span></div></div>
+              <div class="price-item"><div class="price-name"><i class="ti ti-flower" style="color:var(--gold-2);margin-right:6px;"></i>Brzuch</div><div class="price-dots"></div><div class="price-time"><i class="ti ti-clock-hour-4"></i>30min</div><div class="price-cost-row"><span class="price-cost">50 zł</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="price-note">
+      <i class="ti ti-sparkles" style="color:var(--gold-1);font-size:18px;margin-right:8px;vertical-align:middle;"></i> Ceny <strong>"taniej do 40%"</strong> obowiązują przy zakupie pakietu zabiegów. Każda klientka otrzymuje <strong>indywidualną konsultację</strong> przed pierwszym zabiegiem.
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="about-grid">
+    <div class="about-visual reveal">
+      <div class="about-frame"></div>
+      <div class="about-visual-inner">
+        <div class="about-monogram">L<span style="color:#d4a64a">G</span></div>
+        <div class="about-monogram-sub">Lady Glow · Atelier</div>
+      </div>
+    </div>
+
+    <div class="about-text reveal">
+      <div class="section-eyebrow"><div class="diamond"></div>Nasza filozofia</div>
+      <h2>Miejsce, w którym <em>piękno</em> staje się rytuałem.</h2>
+      <p>Lady Glow to kameralne atelier urody w sercu Łodzi, stworzone z myślą o kobietach, które wybierają <strong>najwyższą jakość</strong> dla siebie.</p>
+      <p>Łączymy nowoczesne technologie estetyczne z indywidualnym podejściem do każdej klientki. Każda wizyta to chwila tylko dla Ciebie — ekskluzywna, intymna, pełna troski.</p>
+
+      <div class="about-stats">
+        <div class="about-stat">
+          <div class="about-stat-num">2 000+</div>
+          <div class="about-stat-lbl">Zadowolonych klientek</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">5.0<i class="ti ti-star-filled" style="font-size:24px;vertical-align:middle;margin-left:4px;"></i></div>
+          <div class="about-stat-lbl">69 opinii Booksy</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">100%</div>
+          <div class="about-stat-lbl">Premium standard</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS (REAL) ============ -->
+<section class="section testimonials" id="testimonials">
+  <div class="section-eyebrow"><div class="diamond"></div>Opinie klientek<div class="diamond"></div></div>
+  <h2 class="section-title reveal">Słowa naszych <em>klientek</em></h2>
+  <p class="section-sub reveal">Bo zaufanie jest największą formą piękna.</p>
+
+  <div class="test-rating reveal">
+    <div class="test-rating-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+    <div class="test-rating-num">5.0</div>
+    <div class="test-rating-meta">na podstawie <strong>69 opinii</strong> z Booksy</div>
+  </div>
+
+  <div class="test-grid">
+    <div class="test-card reveal">
+      <div class="test-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+      <div class="test-service">Endospheres Therapy</div>
+      <p class="test-text">Usługa przebiegła w bardzo przyjemnej atmosferze. Pani Elena bardzo jasno i szczegółowo wyjaśniła mi istotę zabiegu. Zostałam bardzo zadowolona zarówno z wizyty, jak i z efektu. Wszystko dopracowane w najmniejszych szczegółach. Polecam.</p>
+      <div class="test-author">
+        <div class="test-avatar">IR</div>
+        <div>
+          <div class="test-name">Iryna</div>
+          <div class="test-meta">Potwierdzona klientka &middot; Booksy</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="test-card reveal">
+      <div class="test-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+      <div class="test-service">Depilacja laserowa</div>
+      <p class="test-text">Widoczna różnica już po pierwszym zabiegu. Pani Elena ma ogromną wiedzę w zakresie beauty, a swoją pracę wykonuje bardzo starannie. Wizyta mija w świetnej atmosferze, salon jest czysty i zadbany. Nie wyobrażam sobie wrócić do innego salonu.</p>
+      <div class="test-author">
+        <div class="test-avatar">AL</div>
+        <div>
+          <div class="test-name">Alicja</div>
+          <div class="test-meta">Potwierdzona klientka &middot; Booksy</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="test-card reveal">
+      <div class="test-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+      <div class="test-service">Pierwsza wizyta</div>
+      <p class="test-text">Od samego wejścia czułam się zaopiekowana i mile widziana. Gabinet jest czysty, przytulny i profesjonalnie wyposażony. Zabiegi przeprowadzone z dokładnością i dbałością o szczegóły. Efekty widoczne już po pierwszym spotkaniu. Właściwa osoba na właściwym miejscu.</p>
+      <div class="test-author">
+        <div class="test-avatar">JU</div>
+        <div>
+          <div class="test-name">Julia</div>
+          <div class="test-meta">Potwierdzona klientka &middot; Booksy</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="test-cta reveal">
+    <a href="https://booksy.com/pl-pl/247066_ladyglow-by-elena-ladna_depilacja_23280_lodz" target="_blank" rel="noopener">
+      Zobacz wszystkie 69 opinii na Booksy <i class="ti ti-arrow-right"></i>
+    </a>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-left reveal">
+      <div class="section-eyebrow" style="justify-content:flex-start"><div class="diamond"></div>Skontaktuj się z nami</div>
+      <h2>Zarezerwuj swój <em>moment</em> piękna.</h2>
+      <p class="lead">Zadzwoń, napisz lub wypełnij formularz — odezwiemy się w ciągu 24 godzin i wspólnie wybierzemy idealny termin.</p>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="ti ti-map-pin"></i>
+          </div>
+          <div>
+            <div class="contact-label">Adres</div>
+            <div class="contact-val">Łódź, ul. Wigury 7 lokal 02<br><span style="font-size:14px;color:var(--muted)">(wejście od ul. Sienkiewicza)</span></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="ti ti-phone"></i>
+          </div>
+          <div>
+            <div class="contact-label">Telefon</div>
+            <div class="contact-val"><a href="tel:+48884904792">+48 884 904 792</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="ti ti-clock-hour-4"></i>
+          </div>
+          <div>
+            <div class="contact-label">Godziny otwarcia</div>
+            <div class="contact-val">Pon — Pt &nbsp;9:00 — 20:00<br><span style="font-size:14px;color:var(--muted)">Sob 10:00 — 16:00 · Nd zamknięte</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="bookingForm">
+      <div class="form-title">Umów <em>wizytę</em></div>
+      <div class="form-sub">Wypełnij formularz — oddzwonimy w ciągu 24h.</div>
+
+      <div class="form-field">
+        <label>Imię i nazwisko</label>
+        <input type="text" name="name" required placeholder="Twoje imię" />
+      </div>
+      <div class="form-field">
+        <label>Telefon</label>
+        <input type="tel" name="phone" required placeholder="+48 ___ ___ ___" />
+      </div>
+      <div class="form-field">
+        <label>Wybierz zabieg</label>
+        <select name="service" required>
+          <option value="">— wybierz —</option>
+          <option>Geneo+ · Glow skóry</option>
+          <option>Endospheres · Redukcja cellulitu</option>
+          <option>Depilacja laserowa</option>
+          <option>Peeling węglowy · Glow Skin</option>
+          <option>Masaż klasyczny</option>
+          <option>Konsultacja indywidualna</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label>Wiadomość (opcjonalnie)</label>
+        <textarea name="msg" placeholder="Preferowany termin lub dodatkowe pytania..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary form-submit">
+        Wyślij rezerwację <i class="ti ti-arrow-right arrow"></i>
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">Lady Glow</div>
+      <div class="tag">Laser &amp; Body Atelier</div>
+      <p>Twoje piękno, Twoja pewność, Twój glow — każdego dnia w sercu Łodzi.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+        <a href="https://booksy.com/pl-pl/247066_ladyglow-by-elena-ladna_depilacja_23280_lodz" target="_blank" rel="noopener" aria-label="Booksy"><i class="ti ti-calendar-heart"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Zabiegi</h4>
+      <ul>
+        <li><a href="#services">Geneo+</a></li>
+        <li><a href="#services">Endospheres</a></li>
+        <li><a href="#services">Depilacja laserowa</a></li>
+        <li><a href="#services">Peeling węglowy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Atelier</h4>
+      <ul>
+        <li><a href="#master">Specjalista</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#pricing">Cennik</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div>© 2026 <em>Lady Glow</em> · Laser &amp; Body Atelier · Łódź</div>
+    <div>Stworzone z miłością do piękna <i class="ti ti-sparkles" style="color:var(--gold-1);vertical-align:middle;margin-left:4px;"></i></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
