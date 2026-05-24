@@ -126,6 +126,12 @@ export default function Hero({ data }) {
         <div className="hero-side-item">{data.side_label}</div>
       </div>
 
+      <div className="hero-socials-mobile">
+        <a href="https://www.instagram.com/laserg_by_olena.ladna/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="ti ti-brand-instagram"></i></a>
+        <a href="https://www.facebook.com/lena.ladnaya.5" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i className="ti ti-brand-facebook"></i></a>
+        <a href="https://booksy.com/pl-pl/247066_ladyglow-by-elena-ladna_depilacja_23280_lodz" target="_blank" rel="noopener noreferrer" aria-label="Booksy"><i className="ti ti-calendar-heart"></i></a>
+      </div>
+
       <div className="scroll-hint">Scroll</div>
     </section>
   );

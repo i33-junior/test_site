@@ -14,9 +14,9 @@ export default function Footer({ data, content }) {
           <div className="tag">{content?.meta?.brand_sub || 'Laser & Body Atelier'}</div>
           <p>{data.tagline}</p>
           <div className="footer-socials">
-            <a href={data.instagram} aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i className="ti ti-brand-instagram"></i></a>
-            <a href={data.facebook} aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i className="ti ti-brand-facebook"></i></a>
-            <a href={data.booksy} target="_blank" rel="noopener noreferrer" aria-label="Booksy"><i className="ti ti-calendar-heart"></i></a>
+            <a href="https://www.instagram.com/laserg_by_olena.ladna/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i className="ti ti-brand-instagram"></i></a>
+            <a href="https://www.facebook.com/lena.ladnaya.5" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i className="ti ti-brand-facebook"></i></a>
+            <a href="https://booksy.com/pl-pl/247066_ladyglow-by-elena-ladna_depilacja_23280_lodz" target="_blank" rel="noopener noreferrer" aria-label="Booksy"><i className="ti ti-calendar-heart"></i></a>
           </div>
         </div>
 

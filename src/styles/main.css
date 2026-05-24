@@ -269,6 +269,30 @@ body::before{
 @keyframes fadeUp{from{ opacity:0; transform:translateY(20px); }to{ opacity:1; transform:translateY(0); }}
 @keyframes fadeIn{to{ opacity:1; }}
 @keyframes revealUp{to{ transform: translateY(0); }}
+/* ---- Hero Social (mobile only) ---- */
+.hero-socials-mobile{display:none;justify-content:center;gap:16px;position:relative;z-index:3;margin-top:30px;opacity:0;animation:fadeUp 1s ease 1.7s forwards;}
+.hero-socials-mobile a{
+  width:48px;height:48px;border-radius:50%;
+  border:1px solid var(--gold-2);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--gold-1);background:rgba(10,8,7,.6);
+  backdrop-filter:blur(8px);
+  transition:all .3s;
+}
+.hero-socials-mobile a:hover{border-color:var(--gold-1);background:rgba(212,166,74,.12);transform:translateY(-3px);}
+.hero-socials-mobile i.ti{font-size:22px;}
+
+/* ---- Mobile Menu Socials ---- */
+.mobile-menu-socials{display:flex;gap:16px;margin-top:20px;}
+.mobile-menu-socials a{
+  width:46px;height:46px;border-radius:50%;
+  border:1px solid rgba(212,166,74,.3);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--gold-2);transition:all .3s;
+}
+.mobile-menu-socials a:hover{border-color:var(--gold-1);color:var(--gold-1);background:rgba(212,166,74,.08);transform:translateY(-2px);}
+.mobile-menu-socials i.ti{font-size:20px;}
+
 .scroll-hint{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);font-family:'Cinzel',serif;font-size:9px;letter-spacing:4px;color:var(--muted);text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:14px;opacity:0;animation: fadeIn 1s ease 2.5s forwards;z-index:3;}
 .scroll-hint::after{content:'';width:1px;height:50px;background:linear-gradient(180deg,var(--gold-2),transparent);animation: scrollPulse 2s ease-in-out infinite;}
 @keyframes scrollPulse{0%,100%{ transform:scaleY(.4); transform-origin:top; opacity:.4; }50%{ transform:scaleY(1); opacity:1; }}
@@ -1000,6 +1024,7 @@ body::before{
   .nav-burger{ display:flex; }
   .nav-right{ display:none; }
   .hero-side{ display:none; }
+  .hero-socials-mobile{ display:flex; }
   .hero{ padding-top:100px; min-height:100vh; }
   .hero-figure{ position:absolute; right:auto; left:50%; bottom:0; transform:translateX(-50%); width:100vw; max-width:none; height:100%; opacity:.4; }
   .hero-figure img{ max-height:100%; }

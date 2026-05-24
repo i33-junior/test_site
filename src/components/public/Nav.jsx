@@ -64,6 +64,11 @@ export default function Nav({ content }) {
           <li><a href="#contact" onClick={e => scrollTo(e, '#contact')}>Kontakt</a></li>
         </ul>
         <a href="#contact" className="mobile-menu-cta" onClick={e => scrollTo(e, '#contact')}>Umów wizytę</a>
+        <div className="mobile-menu-socials">
+          <a href="https://www.instagram.com/laserg_by_olena.ladna/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="ti ti-brand-instagram"></i></a>
+          <a href="https://www.facebook.com/lena.ladnaya.5" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i className="ti ti-brand-facebook"></i></a>
+          <a href="https://booksy.com/pl-pl/247066_ladyglow-by-elena-ladna_depilacja_23280_lodz" target="_blank" rel="noopener noreferrer" aria-label="Booksy"><i className="ti ti-calendar-heart"></i></a>
+        </div>
         <div className="mobile-menu-info">
           {content?.contact?.address || 'Łódź, ul. Wigury 7/02'}
           <a href={`tel:${(content?.contact?.phone || '').replace(/\s/g, '')}`}>{content?.contact?.phone || '+48 884 904 792'}</a>
