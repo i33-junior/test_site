@@ -19,7 +19,13 @@ const sectionTitleKeys = {
 
 export default function AdminDashboard() {
   const [active, setActive] = useState('hero');
+  const [menuOpen, setMenuOpen] = useState(false);
   const { t } = useLang();
+
+  const handleSelect = (id) => {
+    setActive(id);
+    setMenuOpen(false);
+  };
 
   const renderEditor = () => {
     switch (active) {
@@ -34,7 +40,11 @@ export default function AdminDashboard() {
 
   return (
     <div className="admin-layout">
-      <AdminSidebar active={active} onSelect={setActive} />
+      <button className="admin-burger" onClick={() => setMenuOpen(!menuOpen)}>
+        <i className={`ti ${menuOpen ? 'ti-x' : 'ti-menu-2'}`}></i>
+      </button>
+      <div className={`admin-sidebar-overlay${menuOpen ? ' open' : ''}`} onClick={() => setMenuOpen(false)} />
+      <AdminSidebar active={active} onSelect={handleSelect} isOpen={menuOpen} />
       <main className="admin-main">
         {renderEditor()}
       </main>

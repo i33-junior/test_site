@@ -17,12 +17,12 @@ const menuItems = [
 
 const langFlags = { pl: 'PL', ru: 'RU', ua: 'UA' };
 
-export default function AdminSidebar({ active, onSelect }) {
+export default function AdminSidebar({ active, onSelect, isOpen }) {
   const { logout } = useAuth();
   const { lang, switchLang, t } = useLang();
 
   return (
-    <aside className="admin-sidebar">
+    <aside className={`admin-sidebar${isOpen ? ' open' : ''}`}>
       <div className="admin-sidebar-logo">
         <span className="admin-sidebar-brand">Lady Glow</span>
         <span className="admin-sidebar-sub">{t('sidebar_admin')}</span>
