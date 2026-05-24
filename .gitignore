@@ -1,5 +1,2 @@
 node_modules
 dist
-server/database.sqlite
-public/uploads/*
-!public/uploads/.gitkeep
