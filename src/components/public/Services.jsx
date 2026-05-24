@@ -67,15 +67,11 @@ export default function Services({ sectionData }) {
                 </div>
               )}
             </div>
-            <div className="service-device">
-              {s.device_image ? (
+            {s.device_image && (
+              <div className="service-device">
                 <img src={s.device_image} alt="" />
-              ) : (
-                <div className="service-device-placeholder">
-                  <DevicePlaceholder type={typeMap[i] || 'geneo'} />
-                </div>
-              )}
-            </div>
+              </div>
+            )}
             <div className="service-body">
               <span className="service-corner">{s.number}</span>
               <div className="service-eyebrow">{s.eyebrow}</div>
