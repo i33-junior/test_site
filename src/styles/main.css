@@ -270,13 +270,12 @@ body::before{
 @keyframes fadeIn{to{ opacity:1; }}
 @keyframes revealUp{to{ transform: translateY(0); }}
 /* ---- Hero Social (mobile only) ---- */
-.hero-socials-mobile{display:none;justify-content:center;gap:16px;position:relative;z-index:3;margin-top:30px;opacity:0;animation:fadeUp 1s ease 1.7s forwards;}
+.hero-socials-mobile{display:none;justify-content:center;gap:18px;padding:28px 0;background:var(--bg-0);}
 .hero-socials-mobile a{
-  width:48px;height:48px;border-radius:50%;
+  width:50px;height:50px;border-radius:50%;
   border:1px solid var(--gold-2);
   display:flex;align-items:center;justify-content:center;
-  color:var(--gold-1);background:rgba(10,8,7,.6);
-  backdrop-filter:blur(8px);
+  color:var(--gold-1);background:rgba(212,166,74,.06);
   transition:all .3s;
 }
 .hero-socials-mobile a:hover{border-color:var(--gold-1);background:rgba(212,166,74,.12);transform:translateY(-3px);}
